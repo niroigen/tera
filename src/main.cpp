@@ -8,11 +8,16 @@ int main() {
   tera::Graphics* graphics = new tera::Graphics(bus);
   bus->addSystem(console);
   bus->addSystem(graphics);
-  // Testing saying hi
 
-  bus->postMessage("Hello World");
+  bus->postMessage("Starting engine");
 
-  delete console;
+  bool isRunning = true;
+
+  while(isRunning) {
+    isRunning = graphics->isRunning;
+  }
+
   delete graphics;
+  delete console;
   delete bus;
 }

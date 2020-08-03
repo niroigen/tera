@@ -3,7 +3,7 @@
 
 namespace tera
 {
-  constexpr int NUM_SYSTEMS = 1;
+  constexpr int NUM_SYSTEMS = 2;
   typedef unsigned int uint;
 }
 
